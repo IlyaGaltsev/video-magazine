@@ -19,17 +19,17 @@ p {
   padding: 0;
 }
 :where(.css-dev-only-do-not-override-1i536d8).ant-message-notice .ant-message-notice-content {
-  background: var(--header-bg);
-  color: var(--font-color);
+  background: var(--header-bg) !important;
+  color: var(--font-color) !important;
 }
 :where(.css-dev-only-do-not-override-1i536d8).ant-modal .ant-modal-content,
 :where(.css-dev-only-do-not-override-1i536d8).ant-modal .ant-modal-title {
-  background: var(--page-bg);
-  color: var(--font-color);
+  background: var(--page-bg) !important;
+  color: var(--font-color) !important;
   svg {
-    fill: var(--font-color)
+    fill: var(--font-color) !important;
   }
 }
 :where(.css-dev-only-do-not-override-1i536d8).ant-btn-default {
-  display: none;
+  display: none !important;
 }

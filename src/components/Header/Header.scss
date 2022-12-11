@@ -53,12 +53,17 @@ header {
       svg {
         fill: var(--logo-color);
         max-width: 34px;
+        z-index: 1000;
+        min-height: 24px;
+        min-width: 24px;
       }
       @media (max-width: 845px) {
         margin-left: 20px;
         height: 40px;
         svg {
           max-width: 24px;
+          min-height: 24px;
+          min-width: 24px;
         }
       }
       @media (max-width: 500px) {
@@ -103,6 +108,8 @@ header {
       svg {
         fill: var(--logo-color);
         max-width: 34px;
+        min-height: 24px;
+        min-width: 24px;
       }
       &:hover {
         cursor: pointer;
