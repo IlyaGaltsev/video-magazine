@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import '../assets/scss/Main.scss';
+
+* {
+  box-sizing: border-box;
+}
+.app {
+  &__wrapper {
+    font-family: Roboto;
+  }
+  &__first-screen {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    @media (max-width: 845px) {
+      margin-top: 20px;
+      padding: 0 14px;
+    }
+  }
+  &__films {
+    margin-top: 80px;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    @media (max-width: 845px) {
+      margin-top: 40px;
+      padding: 0 14px;
+    }
+  }
+}
+.films__wrapper {
+  width: 100%;
+  max-width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 40px;
+  column-gap: 40px;
+  margin-bottom: 60px;
+  @media (max-width: 1189px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 781px) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+  @media (max-width: 500px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

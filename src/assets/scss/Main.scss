@@ -1,0 +1,35 @@
+button, input {
+  border: none;
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+  }
+}
+h2 {
+  font-size: 30px;
+  line-height: 35px;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+:where(.css-dev-only-do-not-override-1i536d8).ant-message-notice .ant-message-notice-content {
+  background: var(--header-bg);
+  color: var(--font-color);
+}
+:where(.css-dev-only-do-not-override-1i536d8).ant-modal .ant-modal-content,
+:where(.css-dev-only-do-not-override-1i536d8).ant-modal .ant-modal-title {
+  background: var(--page-bg);
+  color: var(--font-color);
+  svg {
+    fill: var(--font-color)
+  }
+}
+:where(.css-dev-only-do-not-override-1i536d8).ant-btn-default {
+  display: none;
+}
