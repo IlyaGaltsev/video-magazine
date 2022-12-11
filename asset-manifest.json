@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/video-magazine/static/css/main.0e5a160f.css",
+    "main.js": "/video-magazine/static/js/main.04a40db7.js",
+    "static/js/787.2fdb3dd9.chunk.js": "/video-magazine/static/js/787.2fdb3dd9.chunk.js",
+    "static/media/first-screen2.png": "/video-magazine/static/media/first-screen2.3231357177690059d58b.png",
+    "static/media/first-screen3.png": "/video-magazine/static/media/first-screen3.0301978755a7fbc35b29.png",
+    "static/media/first-screen1.png": "/video-magazine/static/media/first-screen1.0e7a64b550d0b1486101.png",
+    "static/media/logoFirst.svg": "/video-magazine/static/media/logoFirst.c8cde71ec49d77f38327229784519f1f.svg",
+    "static/media/heart2.svg": "/video-magazine/static/media/heart2.89a6185bc9a5ef11f1f00b1a9d65a0a3.svg",
+    "static/media/heart.svg": "/video-magazine/static/media/heart.81b22b7b2ef8c096488d3def8c062e95.svg",
+    "index.html": "/video-magazine/index.html",
+    "static/media/izbrannoe.svg": "/video-magazine/static/media/izbrannoe.589f0ed2cd07da2ff798eddb312f050b.svg",
+    "main.0e5a160f.css.map": "/video-magazine/static/css/main.0e5a160f.css.map",
+    "main.04a40db7.js.map": "/video-magazine/static/js/main.04a40db7.js.map",
+    "787.2fdb3dd9.chunk.js.map": "/video-magazine/static/js/787.2fdb3dd9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e5a160f.css",
+    "static/js/main.04a40db7.js"
+  ]
+}
