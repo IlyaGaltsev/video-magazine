@@ -41,7 +41,7 @@ function App() {
     setModalCorzina(false);
     massCorzina.map(item => summ = summ + item.coast)
     setMassCorzina([]);
-    if (summ !== 0) success(`Поздравляем с покуппкой на сумму: ${summ} ₽`)
+    if (summ !== 0) success(`Поздравляем с покупкой на сумму: ${summ} ₽`)
     massVideo.map(item => item.corzina = false)
   }
 
