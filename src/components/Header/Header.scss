@@ -171,4 +171,11 @@ header {
   bottom: -10px;
   right: -10px;
   background: #096DD9;
+  @media (max-width: 845px) {
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    bottom: -5px;
+    right: -5px;
+  }
 }
