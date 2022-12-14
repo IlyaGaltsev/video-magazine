@@ -1,6 +1,6 @@
 import './App.scss';
 import massVideos from '../assets/data/data';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Header } from '../components/Header';
 import { VideoCard } from '../components/VideoCard/VideoCard';
 import { Corzina } from '../components/Corzina';
@@ -10,22 +10,11 @@ import { FirstScreen } from '../FirstScreen';
 
 function App() {
   const [messageApi, contextHolder] = message.useMessage();
-  const [theme, setTheme] = useState(false);
-  const [value, setValue] = useState('');
   const [modalCorzina, setModalCorzina] = useState(false);
   const [modalFavourite, setModalFavourite] = useState(false);
   const [massCorzina, setMassCorzina] = useState([])
   const [massFavourite, setMassFavourite] = useState([])
 
-  useEffect(() => {
-    if (theme) {
-      document.documentElement.classList.remove('ligth')
-      document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.classList.remove('dark')
-      document.documentElement.classList.add('ligth')
-    }
-  },[theme]);
 
   const massVideo = massVideos;
 
@@ -87,28 +76,15 @@ function App() {
       <Header
         setModalFavourite={setModalFavourite}
         setModalCorzina={setModalCorzina}
-        value={value}
         massCorzina={massCorzina}
-        setValue={setValue}
-        theme={theme}
-        setTheme={setTheme}
       />
       <FirstScreen/>
       <div className="app__films">
         <div className="films__wrapper">
-          {massVideo
-            .filter(el => el.title.toLowerCase().includes(value.toLowerCase()))
-            .map(item => {
-              return(
-                <VideoCard
-                  key={item.id}
-                  {...item}
-                  addToCorzina={addToCorzina}
-                  toFavourite={toFavourite}
-                />
-              )
-            })
-          }
+          <VideoCard
+            addToCorzina={addToCorzina}
+            toFavourite={toFavourite}
+          />
         </div>
       </div>
       <Corzina
